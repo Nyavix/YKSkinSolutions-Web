@@ -1,4 +1,6 @@
 import Hero from "@/components/Hero";
+import FeaturedServices from "@/components/FeaturedServices";
+import HomepageReviews from "@/components/HomepageReviews";
 import BookingBanner from "@/components/BookingBanner";
 
 export const metadata = {
@@ -11,6 +13,8 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <FeaturedServices />
+      <HomepageReviews />
       <BookingBanner />
     </>
   );
