@@ -188,16 +188,11 @@ export default function Hero() {
       const iH = img.naturalHeight;
       ctx.clearRect(0, 0, W, H);
 
-      // Cover-fit on desktop, zoomed contain on mobile
-      const isMobile = W < 768;
-      let scale: number, offX: number, offY: number;
-      if (isMobile) {
-        scale = Math.min(W / iW, H / iH) * 1.1;
-      } else {
-        scale = Math.max(W / iW, H / iH);
-      }
-      offX = (W - iW * scale) / 2;
-      offY = (H - iH * scale) / 2;
+      // Cover-fit on all screen sizes: scale to fill the viewport,
+      // cropping whichever axis overflows (sides on portrait mobile).
+      const scale = Math.max(W / iW, H / iH);
+      const offX = (W - iW * scale) / 2;
+      const offY = (H - iH * scale) / 2;
       ctx.drawImage(img, offX, offY, iW * scale, iH * scale);
     };
 
