@@ -45,3 +45,6 @@ yk-skin-sol-data/
 .gemini/
 .claude/
 design-system/
+
+# Upscayl raw PNG frames (too large for git — use processed JPEGs instead)
+public/frames/upscayl/
