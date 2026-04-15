@@ -141,7 +141,20 @@ export default function Footer() {
           style={{ borderTop: "1px solid #FBCFE8", color: "#9D174D", opacity: 0.7 }}
         >
           <p>&copy; {year} Yellowknife Skin Solutions. All rights reserved.</p>
-          <p>Designed with care in Yellowknife, NT 🌟</p>
+          <p>
+            Designed with care by{" "}
+            <a
+              href="https://www.ariasstudio.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold transition-colors duration-200"
+              style={{ color: "#EC4899" }}
+              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#8B5CF6")}
+              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#EC4899")}
+            >
+              Arias Studio
+            </a>
+          </p>
         </div>
       </div>
     </footer>
