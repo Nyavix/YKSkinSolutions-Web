@@ -4,7 +4,7 @@ export default function BookingBanner() {
   return (
     <section
       id="contact"
-      className="py-24 px-6"
+      className="py-24 px-4 sm:px-6"
       style={{ background: "linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%)" }}
     >
       <div className="section-inner text-center">

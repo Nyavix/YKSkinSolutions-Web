@@ -140,7 +140,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6" style={{ background: "#FFF7FB" }}>
+    <section id="services" className="py-24 px-4 sm:px-6" style={{ background: "#FFF7FB" }}>
       <div className="section-inner">
         <div className="text-center mb-16">
           <span className="eyebrow">What We Offer</span>

@@ -74,7 +74,7 @@ const clinicDetails = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6" style={{ background: "linear-gradient(160deg, #FDF2F8 0%, #FFF7FB 100%)" }}>
+    <section id="about" className="py-24 px-4 sm:px-6" style={{ background: "linear-gradient(160deg, #FDF2F8 0%, #FFF7FB 100%)" }}>
       <div className="section-inner">
 
         {/* Section header */}
@@ -94,7 +94,7 @@ export default function About() {
         {/* Team cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-20">
           {team.map((member) => (
-            <article key={member.id} id={`team-${member.id}`} className="card p-8 text-center">
+            <article key={member.id} id={`team-${member.id}`} className="card p-5 sm:p-8 text-center">
               {/* Photo */}
               <div className="relative w-28 h-28 mx-auto mb-5">
                 <div

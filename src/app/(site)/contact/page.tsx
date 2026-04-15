@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div
-      className="pt-28 pb-24 px-6 min-h-screen"
+      className="pt-28 pb-24 px-4 sm:px-6 min-h-screen"
       style={{ background: "linear-gradient(160deg, #FDF2F8 0%, #FFF7FB 100%)" }}
     >
       <div className="section-inner max-w-5xl">
@@ -30,7 +30,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact details card */}
           <div
-            className="card p-8 flex flex-col gap-6"
+            className="card p-5 sm:p-8 flex flex-col gap-6"
             style={{ background: "#FFF7FB", border: "1px solid #FBCFE8", borderRadius: "1.25rem" }}
           >
             <h2
@@ -97,7 +97,7 @@ export default function ContactPage() {
                       target={item.href.startsWith("http") ? "_blank" : undefined}
                       rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       className="text-sm whitespace-pre-line transition-colors duration-200"
-                      style={{ color: "#831843" }}
+                      style={{ color: "#831843", overflowWrap: "break-word", wordBreak: "break-all" }}
                     >
                       {item.value}
                     </a>
@@ -115,7 +115,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-6">
             {/* Fresha booking */}
             <div
-              className="card p-8"
+              className="card p-5 sm:p-8"
               style={{
                 background: "linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%)",
                 border: "none",
@@ -135,7 +135,7 @@ export default function ContactPage() {
                 href="https://www.fresha.com/a/yellowknife-skin-solutions-yellowknife-480a-range-lake-road-s59qr4ug/all-offer?menu=true&pId=547714"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full font-semibold text-sm cursor-pointer transition-all duration-200 w-full justify-center"
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full font-semibold text-sm cursor-pointer transition-all duration-200 w-full justify-center whitespace-nowrap"
                 style={{ background: "#fff", color: "#EC4899" }}
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -150,7 +150,7 @@ export default function ContactPage() {
 
             {/* Social / languages */}
             <div
-              className="card p-8"
+              className="card p-5 sm:p-8"
               style={{ background: "#FFF7FB", border: "1px solid #FBCFE8", borderRadius: "1.25rem" }}
             >
               <h2

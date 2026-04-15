@@ -386,7 +386,7 @@ export default function Hero() {
       </section>
 
       {/* ── Stats section ──────────────────────────────────── */}
-      <section className="py-24 px-6" style={{ background: 'linear-gradient(160deg, #FFF7FB 0%, #FDF2F8 100%)' }}>
+      <section className="py-24 px-4 sm:px-6" style={{ background: 'linear-gradient(160deg, #FFF7FB 0%, #FDF2F8 100%)' }}>
         <div className="section-inner max-w-4xl">
           <div className="text-center mb-14">
             <span className="eyebrow">By the Numbers</span>

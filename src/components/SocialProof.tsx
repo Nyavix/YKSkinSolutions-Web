@@ -45,7 +45,7 @@ const reviews = [
 
 export default function SocialProof() {
   return (
-    <section id="reviews" className="py-24 px-6 overflow-hidden" style={{ background: "#FFF7FB" }}>
+    <section id="reviews" className="py-24 px-4 sm:px-6 overflow-hidden" style={{ background: "#FFF7FB" }}>
       <div className="section-inner">
         {/* Header */}
         <div className="text-center mb-16">
